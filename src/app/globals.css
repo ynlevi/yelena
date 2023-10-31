@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --theme-dark: #1a0507;
+  --theme-light: #f2e8e9;
+  --theme-yellow: #f3e702;
+}
+
+body {
+  color: var(--theme-light);
+  background: var(--theme-dark);
+}
+
+.menu-open-height {
+  height: calc(100vh - 5rem);
+}
+.remove-select-styling {
+  appearance: none;
+  -webkit-appearance: none;
+}
