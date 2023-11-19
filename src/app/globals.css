@@ -20,3 +20,6 @@ body {
   appearance: none;
   -webkit-appearance: none;
 }
+.path-color polyline {
+  stroke: currentColor;
+}

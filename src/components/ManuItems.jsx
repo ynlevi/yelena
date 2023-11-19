@@ -22,9 +22,9 @@ export default function MenuItems({ handleClick }) {
 }
 
 const menuItems = [
-  { name: "home", path: "/" },
-  { name: "what we do", path: "/what-we-do" },
-  { name: "projects", path: "/projects" },
-  { name: "blog", path: "/blog" },
-  { name: "contact us", path: "/contact-us" },
+  { name: "עמוד הבית", path: "/" },
+  { name: "השירותים שלנו", path: "/what-we-do" },
+  { name: "פרוייקטים", path: "/projects" },
+  { name: "בלוג", path: "/blog" },
+  { name: "דברו איתנו", path: "/contact-us" },
 ];

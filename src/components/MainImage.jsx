@@ -1,12 +1,19 @@
 "use client";
-
 import { useEffect, useRef, useState } from "react";
-import { motion, useAnimate } from "framer-motion";
+import {
+  motion,
+  useAnimate,
+  useScroll,
+  useMotionValueEvent,
+  useTransform,
+} from "framer-motion";
 function MainImage() {
   const [imageIndex, setImageIndex] = useState(0);
   const [scope, animate] = useAnimate();
 
-  const ref = useRef();
+  const target = useRef(null);
+
+  const { scrollY } = useScroll();
   useEffect(() => {
     setTimeout(() => {
       animate(scope.current, { opacity: 0 }, { duration: 1 });
@@ -25,8 +32,9 @@ function MainImage() {
 
     return () => clearInterval(interval);
   }, []);
+
   return (
-    <div className="absolute inset-0 w-full h-screen z-0 lg:relative">
+    <div className="relative inset-0 w-full h-screen z-0 " ref={target}>
       <motion.img
         ref={scope}
         src={images[imageIndex]}
@@ -39,14 +47,13 @@ function MainImage() {
         className="absolute inset-0  h-screen w-scree flex items-end bg-theme-dark z-20 "
         style={{ backgroundColor: "rgba(26, 5, 7, 0.45)" }}
       >
-        <div className="h-fit w-11/12 ml-auto mb-10 mx-auto ">
-          <h1 className="text-5xl text-theme-yellow font-bold tracking-wider lg:text-6xl">
-            Yaniv
-            <br />
-            Smadar
+        <div className="h-fit w-11/12 ml-auto mb-5 mx-auto text-theme-yellow">
+          <h1 className="text-6xl font-bold tracking-wider lg:text-7xl ">
+            <div className="-mb-4">ילנה</div>
+            <div className="">וויסמן</div>
           </h1>
-          <h2 className="text-xl text-theme-yellow font-semibold tracking-wider mt-1 lg:text-2xl">
-            live in Israel, feel in America.
+          <h2 className="text-xl font-semibold tracking-wider mt-1 lg:text-2xl">
+            מעצבת פנים שמבינה אותך.
           </h2>
         </div>
       </div>
@@ -56,9 +63,7 @@ function MainImage() {
 export default MainImage;
 
 const images = [
-  "https://www.yanivsite.com/wp-content/uploads/2023/06/mg_9067-copy_optimized-scaled-1.jpg",
-  "https://www.yanivsite.com/wp-content/uploads/2023/06/mg_3922-copy_optimized-scaled-1.jpg",
-  "https://www.yanivsite.com/wp-content/uploads/2023/06/mg_9586_optimized-scaled-1.jpg",
-  "https://www.yanivsite.com/wp-content/uploads/2023/06/image-45_optimized.1-scaled-1-2048x1366.jpg",
-  "https://www.yanivsite.com/wp-content/uploads/2023/06/GR01636-scaled-1.jpg",
+  "https://images.pexels.com/photos/19050701/pexels-photo-19050701/free-photo-of-large-windows-in-living-room.jpeg",
+  "https://images.pexels.com/photos/6035357/pexels-photo-6035357.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
 ];

@@ -5,14 +5,14 @@ import { AnimatePresence, motion } from "framer-motion";
 import MenuItems from "./ManuItems";
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
+  const [neverOpen, setNeverOpen] = useState(true);
   const hamburger = {
-    shown: { y: 0 },
+    shown: { y: 0, transition: { delay: 0.75 } },
     hidden: { y: "-100px" },
   };
-  const toggleClick = () => {
-    setIsOpen((prev) => !prev);
-    console.log("click");
-  };
+  const toggleClick = () => setIsOpen((prev) => !prev);
+  const firstClick = () => setNeverOpen(false);
+
   return (
     <div className="lg:hidden flex items-center">
       <AnimatePresence>
@@ -21,8 +21,11 @@ export default function MobileMenu() {
         ) : (
           <motion.button
             key="hamburger"
-            onClick={toggleClick}
-            variants={hamburger}
+            onClick={() => {
+              toggleClick();
+              firstClick();
+            }}
+            variants={!neverOpen && hamburger}
             initial="hidden"
             animate="shown"
             exit="hidden"
@@ -66,7 +69,7 @@ const MenuOpen = ({ handleClick }) => {
           initial={{ y: "-500px" }}
           animate={{ y: 0, transition: { delay: 0.5 } }}
           exit={{ y: "-500px" }}
-          className="w-fit mr-2 mt-6 ml-auto"
+          className="w-fit ml-2 mt-6 mr-auto"
         >
           <VscClose size={40} />
         </motion.div>
