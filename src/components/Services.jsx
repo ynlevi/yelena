@@ -17,7 +17,10 @@ function Services() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover rounded-lg"
                 ></Image>
-                <div className="absolute bottom-7 inset-x-0 text-center font-extrabold text-2xl tracking-wider text-theme-yellow">
+                <div
+                  className="absolute bottom-7 inset-x-0 text-center font-extrabold text-2xl tracking-wider text-theme-yellow "
+                  style={{ textShadow: "var(--theme-dark) 1px 0 10px" }}
+                >
                   {name}
                 </div>
               </Link>
