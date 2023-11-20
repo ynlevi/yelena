@@ -10,9 +10,6 @@ import {
 function HeaderBg() {
   const { scrollY } = useScroll();
   const ref = useRef(null);
-  useMotionValueEvent(scrollY, "change", (latest) => {
-    console.log("Page scroll: ", latest);
-  });
 
   const opacity = useTransform(
     scrollY,

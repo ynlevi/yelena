@@ -10,7 +10,9 @@ export default function MenuItems({ handleClick }) {
         <li key={i} className="py-1 capitalize list-none tracking-widest">
           <Link
             href={path}
-            className={`py-1 ${path === pathname && "text-theme-yellow"}`}
+            className={`py-1 ${
+              path === pathname && "text-theme-yellow font-light"
+            }`}
             onClick={handleClick}
           >
             {name}
@@ -23,7 +25,7 @@ export default function MenuItems({ handleClick }) {
 
 const menuItems = [
   { name: "עמוד הבית", path: "/" },
-  { name: "השירותים שלנו", path: "/what-we-do" },
+  { name: "מי אנחנו", path: "/about-us" },
   { name: "פרוייקטים", path: "/projects" },
   { name: "בלוג", path: "/blog" },
   { name: "דברו איתנו", path: "/contact-us" },
