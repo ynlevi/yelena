@@ -3,7 +3,7 @@ import Image from "next/image";
 import Title from "./Title";
 function Services() {
   return (
-    <div className=" lg:border-r-[.1px] border-gray-600 px-[2.25rem]">
+    <div className=" lg:border-r-[.1px] border-gray-600 w-11/12 mx-auto lg:px-[2.25rem]">
       <Title text={"השירותים שלנו"} />
       <ul className="py-6 flex justify-between lg:flex-row flex-col gap-8 xl:gap-[4.5rem] items-center flex-wrap ">
         {services.map(({ name, link, img }) => (
