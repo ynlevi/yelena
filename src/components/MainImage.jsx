@@ -48,7 +48,7 @@ function MainImage() {
         style={{ backgroundColor: "rgba(26, 5, 7, 0.45)" }}
       >
         <div className="h-fit w-11/12 ml-auto mb-5 mx-auto text-theme-yellow">
-          <h1 className="text-6xl font-bold tracking-wider lg:text-7xl ">
+          <h1 className="text-6xl font-bold tracking-wider lg:text-7xl  ">
             <div className="-mb-4">ילנה</div>
             <div className="">וויסמן</div>
           </h1>

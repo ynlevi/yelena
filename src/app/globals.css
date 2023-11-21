@@ -6,6 +6,7 @@
   --theme-dark: #1a0507;
   --theme-light: #f2e8e9;
   --theme-yellow: #f3e702;
+  --theme-light-dark: #e17366;
 }
 
 body {
@@ -22,4 +23,12 @@ body {
 }
 .path-color polyline {
   stroke: currentColor;
+}
+.gradient-circle {
+  background-image: radial-gradient(
+    circle,
+    transparent 30%,
+    var(--theme-dark) 65%,
+    var(--theme-dark) 100%
+  );
 }

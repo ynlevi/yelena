@@ -5,6 +5,7 @@ import Services from "@/components/Services";
 import Steps from "@/components/Steps";
 import SomeProjects from "@/components/SomeProjects";
 import Recommendation from "@/components/Recommendation";
+import CTA from "@/components/CTA";
 export default function Home() {
   return (
     <div className="">
@@ -15,6 +16,7 @@ export default function Home() {
       <Services />
       <Recommendation />
       <Steps />
+      <CTA />
     </div>
   );
 }

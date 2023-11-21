@@ -10,7 +10,7 @@ function Steps() {
   return (
     <div className="lg:border-r-[.1px] lg:border-gray-600 w-11/12 mx-auto lg:w-full lg:px-[2.25rem] ">
       <Title text={"אז איך זה עובד?"} />
-      <ul className="my-6 flex gap-4 flex-col lg:flex-row lg:gap-0 items-center mx-auto lg:mr-0 ">
+      <ul className="py-6 flex gap-4 flex-col lg:flex-row lg:gap-0 items-center mx-auto lg:mr-0 ">
         {steps.map((step, i) => (
           <Step key={i} index={i + 1} {...step} />
         ))}

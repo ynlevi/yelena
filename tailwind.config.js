@@ -12,8 +12,7 @@ module.exports = {
         "theme-dark": "var(--theme-dark)",
         "theme-light": "var(--theme-light)",
         "theme-yellow": "var(--theme-yellow)",
-        // "theme-light-dark": "#904c4c",
-        "theme-light-dark": "#e17366",
+        "theme-light-dark": "var(--theme-light-dark)",
       },
       height: {
         "main-height-media": "calc(100vh - 5rem)",
