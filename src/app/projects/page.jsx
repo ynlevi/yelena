@@ -1,5 +1,5 @@
 import Title from "@/components/Title";
-import ProjectCard from "@/components/projects/projectCard";
+import ProjectCard from "@/components/ProjectCard";
 export default function Projects() {
   return (
     <div className="mt-8">
