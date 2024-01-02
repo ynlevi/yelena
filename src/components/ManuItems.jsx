@@ -25,7 +25,7 @@ export default function MenuItems({ handleClick }) {
 
 const menuItems = [
   { name: "עמוד הבית", path: "/" },
-  { name: "מי אנחנו", path: "/about-us" },
+  { name: "מי אנחנו", path: "/what-we-do" },
   { name: "פרוייקטים", path: "/projects" },
   { name: "בלוג", path: "/blog" },
   { name: "דברו איתנו", path: "/contact-us" },

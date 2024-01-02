@@ -6,9 +6,9 @@ function Recommendation() {
       <div className="w-11/12 mx-auto lg:w-full lg:px-[2.25rem]">
         <Title text={"לקוחות ממליצים"} />
       </div>
-      <ul className="flex gap-6 lg:gap-9 py-6 overflow-scroll px-[2.25rem] snap-x ">
+      <ul className="snap-mandatory scroll-p-9 flex gap-6 lg:gap-9 py-6 overflow-scroll px-[2.25rem] snap-x">
         {recomms.map(({ name, city, avatar, p }) => (
-          <li className=" snap-mandatory snap-start scroll-mr-9 border-theme-light-dark min-w-full font-light sm:min-w-[66%] md:min-w-[30%] py-4 px-10 text-center flex flex-col gap-4  tracking-wider text-[.9rem] border-2">
+          <li className="  snap-center border-theme-light-dark min-w-full font-light sm:min-w-[66%] md:min-w-[30%] py-4 px-10 text-center flex flex-col gap-4 tracking-wider text-[.9rem] border-2">
             <div className="flex justify-center items-center gap-2">
               <div className="">
                 <h4 className="font-bold ">{name}</h4>

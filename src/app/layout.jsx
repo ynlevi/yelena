@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import { Assistant } from "next/font/google";
 import "./globals.css";
+
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
@@ -11,6 +12,7 @@ const assistant = Assistant({
 export const metadata = {
   title: "Yelena Weissman",
   description: "a premium interior design experience in Israel",
+  icons: "yelena-icon.ico",
 };
 
 export default function RootLayout({ children }) {

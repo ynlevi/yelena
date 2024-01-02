@@ -21,8 +21,8 @@ export default function Intro() {
         <div className="relative">
           <div className="relative h-72 w-72 mx-auto lg:mx-0 lg:w-96 lg:h-96 z-[01] ">
             <Image
-              src="https://scontent.ftlv19-2.fna.fbcdn.net/v/t39.30808-6/281758377_1226061654596043_5161498980826635865_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=YErnRpoJvQoAX97clbH&_nc_ht=scontent.ftlv19-2.fna&oh=00_AfCVn_q7flPA0BMX7LImH9v8GqxyJ8hzDoG4uA3S4WC8Aw&oe=655E19A1"
-              blurDataURL="https://scontent.ftlv19-2.fna.fbcdn.net/v/t39.30808-6/281758377_1226061654596043_5161498980826635865_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=YErnRpoJvQoAX97clbH&_nc_ht=scontent.ftlv19-2.fna&oh=00_AfCVn_q7flPA0BMX7LImH9v8GqxyJ8hzDoG4uA3S4WC8Aw&oe=655E19A1"
+              src="/img/yelena-main-image.jpg"
+              blurDataURL="/img/yelena-main-image.jpg"
               alt="profile-img"
               fill={true}
               quality={100}
